@@ -32,8 +32,14 @@ jobs:
       - name: Report Netbox URL
         run: echo $NETBOX_URL
 
+      - name: Test filessystm
+        run: |
+          ls /
+          echo "/__w"
+          ls /__w/
+
       - name: Run import script
-        run: python3 -u nb-dt-import.py
+        run: bash python3 -u /__w/nb-dt-import.py
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
