@@ -24,7 +24,7 @@ jobs:
         NETBOX_URL: ${{ vars.NETBOX_URL }}
         NETBOX_TOKEN: ${{ secrets.NETBOX_TOKEN }}
         REPO_URL: ${{ vars.REPO_URL }}
-        REPO_BRANCH: ${{ github.ref }}
+        REPO_BRANCH: ${{ github.head_ref }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
