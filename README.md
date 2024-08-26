@@ -6,7 +6,7 @@ This repo contains the collection of device and module templates and provides th
 ## Usage
 Template format is expected to be consistent to that use by Netbox export to yaml function.
 
-Main branch is synced with production repo. PR to main branch will trigger push to development install of netbox.
+Main branch is synced with production repo. PR to main branch will trigger sync to development install of netbox.
 
 ## Limitations
 Manufacturer creation is not supported and is being handled by https://github.com/nerc-project/nerc-netbox repo.
