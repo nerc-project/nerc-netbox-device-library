@@ -11,7 +11,7 @@ Main branch is synced with production repo. PR to main branch will trigger push 
 ## Limitations
 Manufacturer creation is not supported and is being handled by https://github.com/nerc-project/nerc-netbox repo.
 
-CI/CD does raise a failed job if template import fails inside the import script.  Ouput of the workflow job needs to be examined to confirm success.
+CI/CD does not raise a failed job if template import fails inside the import script.  Ouput of the workflow job needs to be examined to confirm success.
 
 ## References:
 - https://github.com/netbox-community/Device-Type-Library-Import
