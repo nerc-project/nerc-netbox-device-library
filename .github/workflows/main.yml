@@ -11,7 +11,7 @@ on:
 
 jobs:
   post_to_netbox:
-    environment: ${{ github.ref_name != 'main' && 'NETBOX_API_DEV' || 'NETBOX_API' }}
+    environment: ${{ github.ref != 'refs/heads/main' && 'NETBOX_API_DEV' || 'NETBOX_API' }}
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/minitriga/netbox-device-type-library-import
@@ -19,7 +19,7 @@ jobs:
         NETBOX_URL: ${{ vars.NETBOX_URL }}
         NETBOX_TOKEN: ${{ secrets.NETBOX_TOKEN }}
         REPO_URL: ${{ vars.REPO_URL }}
-        REPO_BRANCH: ${{ github.head_ref }}
+        REPO_BRANCH: ${{ github.head_ref == '' && 'main' || github.head_ref }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
