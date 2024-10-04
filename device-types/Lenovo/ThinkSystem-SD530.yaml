@@ -1,6 +1,6 @@
 manufacturer: Lenovo
 model: ThinkSystem SD530
-slug: thinksystem-sd530
+slug: sd530
 description: ''
 default_platform: null
 part_number: ''
@@ -13,16 +13,6 @@ weight_unit: ''
 comments: ''
 interfaces:
   - name: NIC
-    type: other
-    enabled: true
-    mgmt_only: true
-    label: ''
-    description: ''
-    bridge: null
-    poe_mode: ''
-    poe_type: ''
-    rf_role: ''
-  - name: ToManager
     type: other
     enabled: true
     mgmt_only: true

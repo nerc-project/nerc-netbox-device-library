@@ -1,6 +1,6 @@
 manufacturer: Dell
 model: PowerEdge FC430
-slug: poweredge-fc430
+slug: fc430
 description: ''
 default_platform: null
 part_number: ''
@@ -10,7 +10,7 @@ subdevice_role: child
 airflow: ''
 weight: null
 weight_unit: ''
-comments: ''
+comments: '- [Owners Manual PDF](https://dl.dell.com/topicspdf/poweredge-fc430_owners-manual3_en-us.pdf)'
 interfaces:
   - name: iDRAC.Embedded.1#NIC.1
     type: other

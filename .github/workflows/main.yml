@@ -1,8 +1,6 @@
-name: NERC Netbox CI
+name: NERC Netbox CI/CD
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
   pull_request:
@@ -11,24 +9,28 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  post_to_netbox:
+    environment: ${{ github.ref != 'refs/heads/main' && 'NETBOX_API_DEV' || 'NETBOX_API' }}
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    container:
+      image: ghcr.io/minitriga/netbox-device-type-library-import
+      env:
+        NETBOX_URL: ${{ vars.NETBOX_URL }}
+        NETBOX_TOKEN: ${{ secrets.NETBOX_TOKEN }}
+        REPO_URL: ${{ vars.REPO_URL }}
+        REPO_BRANCH: ${{ github.head_ref == '' && 'main' || github.head_ref }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Report Netbox URL
+        run: echo $NETBOX_URL
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Report repo branch
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo $REPO_BRANCH
+          echo $GITHUB_HEAD_REF
+
+      - name: Run import script
+        run: python3 -u /app/nb-dt-import.py

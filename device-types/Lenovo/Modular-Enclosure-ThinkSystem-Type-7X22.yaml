@@ -1,7 +1,7 @@
 ---
 manufacturer: Lenovo
 model: Modular Enclosure (ThinkSystem) - Type 7X22
-slug: modular-enclosure-thinksystem-type-7x22
+slug: 7x22
 description: ''
 default_platform: null
 part_number: ''
@@ -36,13 +36,13 @@ interfaces:
 device-bays:
   - name: '1'
     label: ''
-    description: ''
+    description: 'FRONT BOTTOM LEFT'
   - name: '2'
     label: ''
-    description: ''
+    description: 'FRONT BOTTOM RIGHT'
   - name: '3'
     label: ''
-    description: ''
+    description: 'FRONT TOP LEFT'
   - name: '4'
     label: ''
-    description: ''
+    description: 'FRONT TOP RIGHT'
