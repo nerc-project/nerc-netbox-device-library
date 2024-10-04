@@ -1,7 +1,7 @@
 ---
 manufacturer: Dell
 model: PowerEdge FX2s
-slug: poweredge-fx2s
+slug: fx2s
 description: ''
 default_platform: null
 part_number: ''
@@ -11,7 +11,9 @@ subdevice_role: ''
 airflow: front-to-rear
 weight: null
 weight_unit: ''
-comments: ''
+comments: '- [Spec Sheet](https://i.dell.com/sites/doccontent/business/smb/merchandizing/en/Documents/PowerEdge_FX2_Spec_Sheet.pdf)\r\
+  \n- [Owners Manual - PDF](https://dl.dell.com/topicspdf/fx_fx2_owners_manual_en-us.pdf)\r\
+  \n- [Owners Manual - HTML](https://www.dell.com/support/manuals/en-us/poweredge-fx2/fx2ownersmanual/about-your-dell-poweredge-fx2fx2s?guid=guid-63a8ba09-c450-496e-ab49-f5030d5ee601&lang=en-us)'
 interfaces:
   - name: Gb1
     type: 1000base-t

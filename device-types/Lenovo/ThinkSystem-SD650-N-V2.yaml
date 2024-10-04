@@ -1,7 +1,7 @@
 ---
 manufacturer: Lenovo
 model: ThinkSystem SD650-N V2
-slug: thinksystem-sd650-n-v2
+slug: sd650-n-v2
 description: ''
 default_platform: null
 part_number: ''
@@ -15,16 +15,6 @@ comments: ''
 interfaces:
   - name: NIC
     type: 1000base-t
-    enabled: true
-    mgmt_only: true
-    label: ''
-    description: ''
-    bridge: null
-    poe_mode: ''
-    poe_type: ''
-    rf_role: ''
-  - name: ToManager
-    type: other
     enabled: true
     mgmt_only: true
     label: ''

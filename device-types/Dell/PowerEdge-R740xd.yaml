@@ -1,7 +1,7 @@
 ---
 manufacturer: Dell
 model: PowerEdge R740xd
-slug: poweredge-r740xd
+slug: r740xd
 description: ''
 default_platform: null
 part_number: ''
@@ -11,7 +11,7 @@ subdevice_role: ''
 airflow: ''
 weight: null
 weight_unit: ''
-comments: ''
+comments: '- [Technical Guide PDF](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/aa/PowerEdge_R740_R740xd_Technical_Guide.pdf)'
 interfaces:
   - name: NIC.1
     type: 1000base-t

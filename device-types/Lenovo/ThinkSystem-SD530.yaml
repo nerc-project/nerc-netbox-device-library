@@ -22,13 +22,3 @@ interfaces:
     poe_mode: ''
     poe_type: ''
     rf_role: ''
-  - name: ToManager
-    type: other
-    enabled: true
-    mgmt_only: true
-    label: ''
-    description: ''
-    bridge: null
-    poe_mode: ''
-    poe_type: ''
-    rf_role: ''
