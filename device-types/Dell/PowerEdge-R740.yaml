@@ -1,0 +1,25 @@
+---
+manufacturer: Dell
+model: PowerEdge R740
+slug: r740
+description: ''
+default_platform: null
+part_number: ''
+u_height: 2.0
+is_full_depth: true
+subdevice_role: ''
+airflow: ''
+weight: null
+weight_unit: ''
+comments: '- [Technical Guide PDF](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/aa/PowerEdge_R740_R740xd_Technical_Guide.pdf)'
+interfaces:
+  - name: NIC.1
+    type: 1000base-t
+    enabled: true
+    mgmt_only: true
+    label: ''
+    description: ''
+    bridge: null
+    poe_mode: ''
+    poe_type: ''
+    rf_role: ''
