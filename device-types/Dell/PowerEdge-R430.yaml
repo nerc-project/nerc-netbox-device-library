@@ -1,0 +1,26 @@
+---
+manufacturer: Dell
+model: PowerEdge R430
+slug: poweredge-r430
+description: ''
+default_platform: null
+part_number: ''
+u_height: 1.0
+is_full_depth: true
+subdevice_role: ''
+airflow: front-to-rear
+weight: null
+weight_unit: ''
+comments: "- [Spec Sheet](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/us/Dell-PowerEdge-R430-Spec-Sheet.pdf)\r\
+  \n- [Owners Manual](https://www.dell.com/support/manuals/en-us/poweredge-r430/r430ownersmanual)"
+interfaces:
+- name: iDRAC.Embedded.1#NIC.1
+  type: 1000base-tx
+  enabled: true
+  mgmt_only: true
+  label: ''
+  description: ''
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
