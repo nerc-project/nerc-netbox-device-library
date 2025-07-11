@@ -1,7 +1,6 @@
----
 manufacturer: Lenovo
-model: ThinkSystem SD650-N V2
-slug: thinksystem-sd650-n-v2
+model: ThinkSystem SR250 V2
+slug: thinksystem-sr250-v2
 description: ''
 default_platform: null
 part_number: ''

@@ -15,7 +15,7 @@ comments: "- [Spec Sheet](https://i.dell.com/sites/csdocuments/Shared-Content_da
   \n- [Owners Manual](https://www.dell.com/support/manuals/en-us/poweredge-r430/r430ownersmanual)"
 interfaces:
 - name: iDRAC.Embedded.1#NIC.1
-  type: 1000base-tx
+  type: 1000base-t
   enabled: true
   mgmt_only: true
   label: ''
